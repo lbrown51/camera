@@ -1,0 +1,9 @@
+<template name="footer">
+    <div class="small-12  columns">
+        {{#if currentUser}}
+        <a href="/profile" id="profile" class="large button expand"><h1>{{userName}}</h1></a>
+        {{else}}
+        <a href="/" id="login" class="large button expand"><h1>Login</h1></a>
+        {{/if}}
+    </div>
+</template>
