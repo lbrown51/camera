@@ -12,5 +12,13 @@ Template.profile.events({
         });
         Meteor.call("updateProfile",credentials);
         $("#saveProfile").addClass("success");
+    },
+    
+    "click #logout": function(){
+        Meteor.logout();
     }
+});
+
+Template.profile.onRendered(function(){
+   $('#profile').hide(); 
 });
