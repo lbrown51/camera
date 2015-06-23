@@ -20,5 +20,5 @@ Template.profile.events({
 });
 
 Template.profile.onRendered(function(){
-   $('#profile').hide(); 
+
 });
